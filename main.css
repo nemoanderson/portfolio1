@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-dark-gray: #696969;
+  --color-gray: #0d1117;
+  --color-hacker-green: #7fff07;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Pixelify Sans", cursive;
+  color: var(--color-hacker-green);
+  background-color: var(--color-gray);
+  
+}
+
+h1 {
+    padding-bottom: 40px;
+    font-size: 90px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+ul.show {
+  display: block;
+}
+
+li {
+  display: flex;
+  text-decoration: none;
+}
+
+button {
+  width: 200px;
+  height: 53px;
+  border-radius: 10px;
+  margin: 30px 30px 30px 0;
+  background-color: var(--color-dark-gray) ;
+  color:aliceblue ;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--color-hacker-green);
+  color: #0d1117;
+}
+
+button:active {
+  background-color:#78e414 ;
+}
+
+section {
+  background-color: var(--color-gray);
+  
+}
+
+hr {
+  margin: 20px;
+}
+
+footer{
+  display: flex;
+  height: 500px;
+  background-color: #696969;
+}
+
+footer p {
+  display: flex;
+  justify-content: space-around;
+  padding: 460px 0 0  0px;
+  color: azure;
+}
+
+svg {
+  width: 40px;
+  fill: #fff;
+}
+/* Nav Bar */
+.hero {
+  height: 100vh;
+  color: var(--color-hacker-green);
+  font-size: 40px;
+}
+
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.hero-text {
+  margin: 0 0 200px 80px;
+
+}
+
+.hero-text p {
+  font-size: 30px;
+}
+
+/* Button */
+.social-media-manager {
+  background-color: transparent;
+}
+
+.logo {
+  display: flex;
+  font-size: 40px;
+}
+
+/* Footer*/
+.social-media {
+  margin: 25px;
+  display: flex;
+  flex-direction:row;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+    background-color: azure;
+}
+
+/* About Section*/
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.headshot {
+  height: 300px;
+  border-radius: 150px;
+}
+.about-section {
+  color: var(--color-gray);
+}
+
+.about p{
+  margin: 35px 205px 35px 0;
+}
+
+/* Projects Section*/
+.projects-section {
+  background-color: var(--color-gray );
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.github-icon {
+  padding : 100px;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px ;
+  margin: 25px;
+}
+
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.project-image {
+  width: 250px;
+  height: 150px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #78e414;
+}
+
+.project-link:hover {
+  color: chocolate;
+}
+
+.img-section {
+  background-color: azure;
+min-height: 30rem;
+  background-image: url("https://giphy.com/embed/8PWAME10lhUti");
+}
+
+.project-class, h3 {
+  padding: 12px;
+}
+
+#hamburger  {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px){
+  #hamburger {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+  
+  }
+  #hamburger:hover {
+  color: #78e414;
+  }
+
+  ul {
+    display: none;
+  }
+
+  nav {
+    align-items: flex-start;
+  }
+}
